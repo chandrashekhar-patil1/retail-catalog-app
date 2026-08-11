@@ -8,7 +8,7 @@ const products = [
     {
         id: 1,
         name: "Rice",
-        price: 60,
+        price: 70,
         category: "Grocery"
     },
     {
