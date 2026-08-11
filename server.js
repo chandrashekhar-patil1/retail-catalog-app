@@ -67,8 +67,10 @@ app.post("/products", (req, res) => {
 
 const PORT = 3000;
 
-app.listen(PORT, () => {
+if (require.main === module) {
+  app.listen(PORT, () => {
     console.log(`Retail Catalog API running on port ${PORT}`);
-});
+  });
+}
 
 module.exports = app;
