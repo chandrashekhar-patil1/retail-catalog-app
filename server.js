@@ -49,6 +49,12 @@ app.get("/products/:id", (req, res) => {
 
     res.json(product);
 });
+    app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "UP",
+    message: "Retail Catalog App is healthy"
+  });
+});
 
 app.post("/products", (req, res) => {
     const { name, price, category } = req.body;
